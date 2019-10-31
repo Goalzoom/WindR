@@ -1,0 +1,9 @@
+library(WindR)
+#用户装载WindR包后，需要启动WindR插件，即输入w.start()命令,可以使用?w.start查看命令说明。
+#注：w.start不重复启动，若需要改变参数，如超时时间，用户可以使用w.stop命令先停止后再启动。
+week<-c(1,2,3,4,5,6)
+x<-c(3,8,19,24,6,1)
+y<-c(1,25,21,3,2,1)
+plot(week,x,col="red",pch=22,bg="yellow",xlim=c(0,6),ylim=c(0,30),lwd=2,xlab="WEEK",ylab="STUDENT",main="lesson",sub="class",col.main="green",font.main=2,asp=0,cex=1.2)
+plot(week,x,col="red",pch=22,bg="yellow",xlim=c(0,6),ylim=c(0,30),lwd=2,xlab="WEEK",ylab="STUDENT",main="lesson",sub="class",col.main="green",font.main=2,asp=0,cex=1.2,type="b",lty=1)
+mycolors=c("#A50F15","#DE2D26","#FB6A4A","#FCAE91","#FEE5D9","white","#EFF3FF","#BDD7E7","#6BAED6","#3182BD","#08519C","#74c476",rgb(107,174,213,max=255))
